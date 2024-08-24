@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <section class="home">
+            <header>
+                <a href="#" class="logo">ARS Kreedashala</a>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Membership</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </header>
+            <div class="content">
+                <div class="textBox">
+                    <h2>Personal Details</h2>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                        Quod voluptatem rem, corporis magni adipisci sapiente cum 
+                        amet autem officiis voluptatibus nihil vitae consequatur 
+                        minus nesciunt tempore laudantium alias aliquam ducimus!
+                    </p>
+                    <button>Attendance Sheet</button>
+                    <button>Maintainence Sheet</button>
+                    <div class="dropdown">
+                    <button>View lesson plan</button>
+                    <div class="dropdown-content">
+                        <a href="#">Sports</a>
+                      <a href="#">Fitness</a>
+                      <a href="#">Strength</a>
+                      <a href="#">Yoga</a>
+                      <a href="#">Endurance </a>
+                      <a href="#">Skill</a>
+                      <a href="#">Test</a>
+                      <a href="#">Agility</a>
+                      <a href="#">Video analysis</a>
+                      <a href="#">Personalize lesson plan</a>
+                    </div>
+                    <div class="wrapper">
+                    <video controls src ="img/video.mp4" width=500></video> &nbsp;&nbsp;
+                     <video controls src ="img/video.mp4" width=500></video>
+                </div>
+            </div>
+                <p class="eading">Looking for a brighter, healthier life?<br>
+                    <div class="wrapper">
+                    <pre>
+                    <strong>* Student feedback</strong>
+                    </pre>
+                    <pre>
+                    <strong>* Interactive sessions</strong>  
+                    </pre>
+                    <pre>
+                    <strong>* Innovative Training</strong>   
+                    </pre>
+                    </div>   
+                </div>
+               
+                <div class="imgBox">
+                    <img src="img/3.png" alt="" class="sports">
+                </div>
+            </div>
+            <ul class="thumb">
+                <li><img src="img/1.png" onclick="imgSlider('img/1.png'); changeColor('#a18c02');"></li>
+                <li><img src="img/4.png" onclick="imgSlider('img/4.png'); changeColor('#2236b4');"></li>
+                <li><img src="img/3.png" onclick="imgSlider('img/3.png'); changeColor('#566a3b');"></li>
+            </ul>
+            
+        </section>
+        
+    </body>
+</html>
+
+<script>
+    function imgSlider(someThing){
+        document.querySelector('.sports').src = someThing;
+    }
+    function changeColor(color){
+        const sec = document.querySelector('.home');
+        sec.style.background = color;
+    }
+</script>

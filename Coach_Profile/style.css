@@ -1,0 +1,251 @@
+@font-face {
+    font-family: 'iran_sans_bold';
+    src: url('../Fonts/iran_sans_bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'iran_sans_light';
+    src: url('../Fonts/iran_sans_light.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'iran_sans_medi';
+    src: url('../Fonts/iran_sans_medi.woff') format('woff');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: iran_sans_medi;
+}
+section{
+    position: relative;
+    width: 100%;
+    min-height: 150vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #566a3b;
+    transition: 0.5s;
+}
+header{
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo{
+    position: relative;
+    font-size: 30px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+header ul{
+    position: relative;
+    display: flex;
+}
+header ul li{
+    list-style-type: none;
+}
+header ul li a{
+    display: inline-block;
+    color: #fff;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+}
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 100px;
+}
+.content .textBox{
+    position: relative;
+    max-width: 600px;
+}
+.content .textBox h2{
+    color: #fff;
+    font-size: 3em;
+    /* line-height: 1.7em; */
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.content .textBox p{
+    color: #fff;
+}
+.content .textBox button{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #fff;
+    color: #111;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.content .imgBox{
+    width: 400px;
+    display: flex;
+    justify-content: flex-end;
+}
+.content .imgBox img{
+    max-width: 200px;
+}
+.thumb{
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    display: flex;
+}
+.thumb li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.thumb li img{
+    max-width: 100px;
+}
+.thumb li:hover{
+    transform: translateY(-15px);
+}
+
+.eading {
+    margin-top: 30px;
+    font-size: 40px;
+    display: grid;
+    justify-content: center;
+    color: rgb(7, 59, 59);
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    padding: 20px;
+    color: rgb(242, 243, 244);
+    font-size: 30px;
+    margin-top: 10px;
+}
+.dropbtn {
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+
+  .dropdown:hover .dropdown-content {display: block;}
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    header {
+        padding: 20px;
+    }
+
+    .content {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .content .textBox {
+        margin-bottom: 30px;
+    }
+
+    .content .textBox h2 {
+        font-size: 2.2em;
+    }
+
+    .content .imgBox {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .content .textBox h2 {
+        font-size: 2em;
+    }
+
+    .content .textBox button {
+        padding: 8px 16px;
+    }
+
+    .thumb li img {
+        max-width: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    section {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    header {
+        padding: 15px 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    header ul li a {
+        margin: 10px 0;
+    }
+
+    .content .textBox h2 {
+        font-size: 1.8em;
+    }
+
+    .content .imgBox {
+        width: 70%;
+    }
+
+    .thumb {
+        bottom: 10px;
+    }
+
+    .thumb li img {
+        max-width: 50px;
+    }
+}
